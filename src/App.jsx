@@ -1,5 +1,10 @@
+import { MainHeader } from "./components/header/MainHeader";
 function App() {
-  return <div className="text-green-700">Hello World</div>;
+  return (
+    <div className="flex flex-col">
+      <MainHeader />
+    </div>
+  );
 }
 
 export default App;
