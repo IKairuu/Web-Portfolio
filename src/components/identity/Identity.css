@@ -1,0 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+
+.name-style {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+}
