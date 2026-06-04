@@ -10,7 +10,7 @@ import {
 
 export const Identity = () => {
   return (
-    <div className="flex items-center justify-center m-8">
+    <div className="flex items-center justify-center">
       <div className="flex flex-col  items-start mr-28">
         <div className="text-purple-600 font-medium text-lg my-4">Hi, I'm</div>
         <div className="name-style my-4 text-white">Kyle Allen Abandia</div>
