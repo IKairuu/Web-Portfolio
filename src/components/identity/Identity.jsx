@@ -10,11 +10,11 @@ import {
 
 export const Identity = () => {
   return (
-    <div className="flex flex-col md:flex-row items-center justify-center border border-red-500 my-5">
+    <div className="flex flex-col md:flex-row items-center justify-center my-5">
       <div className="md:hidden">
         <img src={profile} className="rounded-3xl size-40" />
       </div>
-      <div className="flex flex-col items-center sm:items-start sm:mr-10 border border-blue-500">
+      <div className="flex flex-col items-center sm:items-start sm:mr-10">
         <div className="text-purple-600 font-medium text-md my-2">Hi, I'm</div>
         <div className="name-style my-2 text-3xl sm:my-4 text-white">
           Kyle Allen Abandia

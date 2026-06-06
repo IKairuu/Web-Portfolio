@@ -11,6 +11,9 @@ export const Home = () => {
     >
       <Identity />
       <hr className="text-gray-800 mx-2 my-10" />
+      <IdentityInformation />
+      <hr className="text-gray-800 mx-2 my-10" />
+      <Stack />
     </div>
   );
 };

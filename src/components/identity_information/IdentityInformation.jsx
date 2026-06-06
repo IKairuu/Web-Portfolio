@@ -23,17 +23,17 @@ const InfoContainers = (props) => {
 
 export const IdentityInformation = () => {
   return (
-    <div className="flex">
-      <div className="flex flex-col items-start">
+    <div className="flex flex-col items-center lg:flex-row">
+      <div className="flex flex-col items-center lg:items-start">
         <div className="text-purple-500 font-semibold">ABOUT ME</div>
         <div className="text-white font-semibold text-2xl">Get to know me!</div>
-        <div className="text-left text-sm mt-2 mr-20">
+        <div className="text-center md:mx-20 lg:mx-0 lg:text-left lg:mr-20 text-sm mt-2">
           I'm a passionate frontend who loves turning ideas into interactive and
           user-friendly web experience. I enjoy learning new technologies and
           constantly improving my skills.
         </div>
       </div>
-      <div className="flex">
+      <div className="flex flex-col sm:flex-row mt-5 lg:mt-0">
         <div className="flex flex-col items-start mx-2">
           <InfoContainers icon={faCalendarDays} labelTitle="Experience">
             1+ Year
