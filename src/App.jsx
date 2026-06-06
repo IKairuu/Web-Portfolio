@@ -4,6 +4,7 @@ function App() {
   return (
     <div className="flex flex-col my-4 px-4 w-full">
       <MainHeader />
+      <Home />
     </div>
   );
 }
