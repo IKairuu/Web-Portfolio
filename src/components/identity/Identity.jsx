@@ -10,24 +10,29 @@ import {
 
 export const Identity = () => {
   return (
-    <div className="flex items-center justify-center">
-      <div className="flex flex-col  items-start mr-28">
-        <div className="text-purple-600 font-medium text-lg my-4">Hi, I'm</div>
-        <div className="name-style my-4 text-white">Kyle Allen Abandia</div>
+    <div className="flex flex-col md:flex-row items-center justify-center border border-red-500 my-5">
+      <div className="md:hidden">
+        <img src={profile} className="rounded-3xl size-40" />
+      </div>
+      <div className="flex flex-col items-center sm:items-start sm:mr-10 border border-blue-500">
+        <div className="text-purple-600 font-medium text-md my-2">Hi, I'm</div>
+        <div className="name-style my-2 text-3xl sm:my-4 text-white">
+          Kyle Allen Abandia
+        </div>
         <div className="bg-linear-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent text-2xl font-semibold">
           Full-Stack Developer
         </div>
-        <div className="text-start">
+        <div className="text-center md:text-start">
           I build responsive, acccessible, and beautiful web applications with
           modern technologies
         </div>
         <div className="flex my-6">
           <button className="bg-linear-to-r from-blue-500 to-purple-500 p-3 rounded-lg text-white flex items-center cursor-pointer mr-4 text-sm">
-            <div className="mx-2">View My Work</div>
+            <div>View My Work</div>
             <FontAwesomeIcon icon={faArrowRight} />
           </button>
           <button className="border border-purple-500 p-3 rounded-lg flex text-sm text-white cursor-pointer hover:bg-purple-500">
-            <div className="mx-2">Download CV</div>
+            <div>Download CV</div>
             <FontAwesomeIcon icon={faDownload} />
           </button>
         </div>
@@ -60,7 +65,7 @@ export const Identity = () => {
           />
         </div>
       </div>
-      <div>
+      <div className="hidden md:flex">
         <img src={profile} className="rounded-3xl" />
       </div>
     </div>
