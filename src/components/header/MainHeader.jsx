@@ -23,7 +23,7 @@ export const MainHeader = () => {
             <button className="mx-2 cursor-pointer hover:bg-linear-to-r from-blue-500 to-purple-500 bg-clip-text hover:text-transparent hover:animate-pulse mr-8">
               Projects
             </button>
-            <button className="text-sm font-mono border border-white p-2 rounded-lg hover:bg-white hover:text-black cursor-pointer">
+            <button className="text-sm font-mono border border-white p-2 rounded-lg transition-colors ease-in-out duration-300 hover:bg-white hover:text-black cursor-pointer">
               Get in touch
               <FontAwesomeIcon icon={faChevronRight} />
             </button>
@@ -38,7 +38,7 @@ export const MainHeader = () => {
           <button className="mx-2 cursor-pointer hover:bg-linear-to-r from-blue-500 to-purple-500 bg-clip-text hover:text-transparent hover:animate-pulse sm:mr-8">
             Projects
           </button>
-          <button className="mx-2 sm:mx-0 text-sm font-mono border border-white p-2 rounded-lg hover:bg-white hover:text-black cursor-pointer">
+          <button className="mx-2 sm:mx-0 text-sm font-mono border border-white p-2 rounded-lg transition-colors ease-in-out duration-300 hover:bg-white hover:text-black cursor-pointer">
             Get in touch
             <FontAwesomeIcon icon={faChevronRight} />
           </button>
