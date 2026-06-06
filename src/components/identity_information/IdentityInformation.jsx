@@ -9,13 +9,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const InfoContainers = (props) => {
   const { icon, labelTitle, children } = props;
   return (
-    <div className="bg-[#090e1a] border border-gray-800 p-4 w-70 rounded-lg flex my-2">
-      <div className="bg-[#141529] flex items-center p-3 rounded-lg border border-gray-800 mr-3">
-        <FontAwesomeIcon icon={icon} size="lg" className="text-blue-500" />
+    <div className="bg-[#090e1a] border border-gray-800 w-60 rounded-lg flex items-center p-2 my-2">
+      <div className="bg-[#141529] flex items-center justify-center rounded-lg h-10 w-10 border border-gray-800 mr-3">
+        <FontAwesomeIcon icon={icon} size="md" className="text-blue-500" />
       </div>
       <div className="flex flex-col items-start">
-        <div>{labelTitle}</div>
-        <div className="font-semibold text-white text-xl">{children}</div>
+        <div className="text-xs">{labelTitle}</div>
+        <div className="font-semibold text-white">{children}</div>
       </div>
     </div>
   );
