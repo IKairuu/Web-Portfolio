@@ -14,5 +14,10 @@ export const useStack = create(() => ({
     { title: "Python", icon: Python },
     { title: "Python", icon: Python },
     { title: "Python", icon: Python },
+    { title: "Python", icon: Python },
+    { title: "Python", icon: Python },
+    { title: "Python", icon: Python },
+    { title: "Python", icon: Python },
+    { title: "Python", icon: Python },
   ],
 }));

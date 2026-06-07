@@ -16,7 +16,7 @@ const CreateStack = (props) => {
   });
   return (
     <ul
-      className={`flex flex-wrap ${seeState ? null : "overflow-hidden h-24"} justify-center gap-3 border`}
+      className={`flex flex-wrap transition-all duration-500 ${seeState ? "overflow-y-clip max-h-50" : "overflow-hidden max-h-24"} justify-center gap-3`}
     >
       {listItems}
     </ul>
@@ -29,9 +29,16 @@ export const Stack = () => {
     <div className="flex flex-col items-center">
       <div className="font-semibold text-xs text-purple-500">TECH STACK</div>
       <div className="text-white text-xl">Technologies I use</div>
-      <div>
+      <div className="flex flex-col items-center">
         <CreateStack seeState={seeMore} />
-        <button onClick={() => setSeeMore(!seeMore)}>See More</button>
+        <div className="bg-transparent border text-white border-white rounded-full py-2 px-6 mt-4 hover:bg-white hover:text-black transition-colors duration-500">
+          <button
+            className="cursor-pointer "
+            onClick={() => setSeeMore(!seeMore)}
+          >
+            {seeMore ? "See Less" : "See More"}
+          </button>
+        </div>
       </div>
     </div>
   );
