@@ -9,7 +9,11 @@ export const Stack = () => {
     return (
       <li>
         <div className="bg-[#090e1a] border border-gray-800 flex flex-col items-center p-3 rounded-lg size-20">
-          <items.icon className="h-full w-full" />
+          {items.imgSrc ? (
+            <img src={items.imgSrc} className="size-7" />
+          ) : (
+            <items.icon className="h-full w-full" />
+          )}
           <div className="text-white text-sm mt-2">{items.title}</div>
         </div>
       </li>
@@ -26,17 +30,15 @@ export const Stack = () => {
         >
           {listItems}
         </ul>
-        <div className="bg-transparent border text-white border-white rounded-full py-2 px-6 mt-4 hover:bg-white hover:text-black transition-colors duration-500">
-          <button
-            className="cursor-pointer"
-            onClick={() => {
-              stackRef.current.scrollTo({ top: 0, behavior: "smooth" });
-              setSeeMore(!seeMore);
-            }}
-          >
-            {seeMore ? "See Less" : "See More"}
-          </button>
-        </div>
+        <button
+          className="cursor-pointer bg-transparent border text-white border-white rounded-full py-2 px-6 mt-4 hover:bg-white hover:text-black transition-colors duration-500"
+          onClick={() => {
+            stackRef.current.scrollTo({ top: 0, behavior: "smooth" });
+            setSeeMore(!seeMore);
+          }}
+        >
+          <div>{seeMore ? "See Less" : "See More"}</div>
+        </button>
       </div>
     </div>
   );
