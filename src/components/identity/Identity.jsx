@@ -65,7 +65,7 @@ export const Identity = () => {
           />
         </div>
       </div>
-      <div className="hidden md:flex border size-full">
+      <div className="hidden md:flex size-full">
         <img src={profile} className="rounded-3xl" />
       </div>
     </div>
