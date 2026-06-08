@@ -33,10 +33,18 @@ export const Projects = () => {
   });
   return (
     <div className="flex flex-col items-center sm:items-start mt-3">
-      <div className="text-purple-500 font-semibold">PROJECTS</div>
-      <div className="text-white text-lg font-bold sm:text-xl">
-        SOME OF MY WORK
+      <div className="flex items-center w-full border justify-between">
+        <div className="flex flex-col items-center sm:items-start">
+          <div className="text-purple-500 font-semibold">PROJECTS</div>
+          <div className="text-white text-lg font-bold sm:text-xl">
+            SOME OF MY WORK
+          </div>
+        </div>
+        <button className="hidden sm:flex ">
+          <div>View All Projects</div>
+        </button>
       </div>
+
       <ul className="flex custom-scroll-main w-full h-100 gap-4 mt-5 p-5">
         {projectList}
       </ul>
