@@ -2,6 +2,7 @@ import { Identity } from "../components/identity/Identity";
 import { IdentityInformation } from "../components/identity_information/IdentityInformation";
 import { Stack } from "../components/stack_information/Stack";
 import { useMenuStore } from "../context/menu";
+import { Projects } from "../components/projects/Projects.";
 
 export const Home = () => {
   const { isActive } = useMenuStore();
@@ -14,6 +15,8 @@ export const Home = () => {
       <IdentityInformation />
       <hr className="text-gray-800 mx-2 my-10" />
       <Stack />
+      <hr className="text-gray-800 mx-2 my-10" />
+      <Projects />
     </div>
   );
 };

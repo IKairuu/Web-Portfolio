@@ -21,8 +21,8 @@ export const Stack = () => {
   });
   return (
     <div className="flex flex-col items-center">
-      <div className="font-semibold text-xs text-purple-500">TECH STACK</div>
-      <div className="text-white text-xl">Technologies I use</div>
+      <div className="font-semibold text-purple-500">TECH STACK</div>
+      <div className="text-white text-xl font-bold">TECHNOLOGIES I USE</div>
       <div className="flex flex-col items-center mt-3">
         <ul
           ref={stackRef}
