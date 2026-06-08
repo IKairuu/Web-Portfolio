@@ -10,7 +10,7 @@ export const useProjects = create((set) => ({
       description:
         "HAKBANG is an educational guidance platform designed to help Filipino senior high school students take the right hakbang toward making informed and strategic decisions as they prepare for higher education.",
       stack: ["Flutter", "Dart", "Firebase", "Git", "Github"],
-      link: "",
+      link: "https://github.com/IKairuu/Project_Hakbang",
     },
     {
       image: itsukiBot,
@@ -18,7 +18,7 @@ export const useProjects = create((set) => ({
       description:
         "Itsuki Nakano Discord Study Bot - Your personal study partner with the voice and attitude of Itsuki Nakano from The Quintessential Quintuplets! She’s flustered, stubborn, and surprisingly reliable. Whether you're reviewing, taking a quiz, or asking for help, she’s always ready with a tsundere comment to keep you motivated.",
       stack: ["Python", "Discord.py"],
-      link: "",
+      link: "https://github.com/IKairuu/Itsuki-Bot",
     },
     {
       image: hakbangApp,
@@ -36,7 +36,7 @@ export const useProjects = create((set) => ({
         "PostgreSQL",
         "Render",
       ],
-      link: "",
+      link: "https://github.com/IKairuu/Project_Hakbang_Server",
     },
   ],
 }));

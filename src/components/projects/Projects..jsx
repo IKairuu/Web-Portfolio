@@ -1,4 +1,5 @@
 import { useProjects } from "../../context/projects";
+import "./Project.css";
 
 export const Projects = () => {
   const { projects } = useProjects();
@@ -11,16 +12,21 @@ export const Projects = () => {
       );
     });
     return (
-      <li className="h-70 w-70 flex flex-none flex-col rounded-lg border border-gray-800 cursor-pointer transition-all hover:-translate-y-5">
+      <li
+        className="h-70 w-70 flex flex-none flex-col rounded-lg border border-gray-800 cursor-pointer transition-all hover:-translate-y-5"
+        onClick={() => window.open(items.link, "_blank")}
+      >
         <div className="flex-1 rounded-t-lg">
           <img src={items.image} className="rounded-t-lg w-full h-40" />
         </div>
         <div className="flex-1 h-full bg-[#090e1a] border border-gray-800 rounded-b-lg p-2">
           <div className="font-bold text-white">{items.title}</div>
-          <div className="text-slate-500 text-xs overflow-y-auto h-20">
+          <div className="text-slate-500 text-xs custom-scroll-y h-20">
             {items.description}
           </div>
-          <ul className="flex mt-2 overflow-x-auto gap-2">{stacks}</ul>
+          <ul className="flex mt-2 overflow-x-auto gap-2 custom-scroll-x pb-2">
+            {stacks}
+          </ul>
         </div>
       </li>
     );
@@ -31,7 +37,7 @@ export const Projects = () => {
       <div className="text-white text-lg font-bold sm:text-xl">
         SOME OF MY WORK
       </div>
-      <ul className="flex overflow-x-scroll max-w-full gap-4 mt-5 p-5">
+      <ul className="flex custom-scroll-main w-full h-100 gap-4 mt-5 p-5">
         {projectList}
       </ul>
     </div>
